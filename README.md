@@ -1,4 +1,4 @@
-# AID Platform UI
+# 23 React Projects
 
 Building 23 react projects
 
