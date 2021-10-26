@@ -5,7 +5,7 @@ import SearchIcon from '@material-ui/icons/Search'
 
 import useStyles from './styles'
 
-const Header = () => {
+const Header = ({ onPlaceChanged, onLoad }) => {
   const classes = useStyles()
 
   return (
@@ -19,7 +19,7 @@ const Header = () => {
           <Typography variant='h6' className={classes.title}>
             Explore New Places
           </Typography>
-          <Autocomplete>
+          <Autocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
             <div className={classes.search}>
               <div className={classes.searchIcon}>
                 <SearchIcon />
