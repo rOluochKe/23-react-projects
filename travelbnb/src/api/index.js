@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const getPlacesData = async (sw, ne) => {
+export const getPlacesData = async (type, sw, ne) => {
   try {
     const {
       data: { data },
